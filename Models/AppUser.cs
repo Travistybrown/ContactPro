@@ -8,7 +8,7 @@ namespace ContactPro.Models
     {
         [Required]
         [Display(Name = "First Name")]
-        [StringLength(50,ErrorMessage = "The {0} must be at least {2} and max {1} character long.", MinimumLength =2)]
+        [StringLength(50,ErrorMessage = "The {0} must be at least {2} and max {1} character long.", MinimumLength = 2)]
         public string? FirstName { get; set; }
         [Required]
         [Display(Name = "Last Name")]
@@ -20,8 +20,9 @@ namespace ContactPro.Models
 
 
         // Make relationship to Contact Model 
-
+        public virtual ICollection<Contact> Contacts { get; set; } = new HashSet<Contact>();
         // Make relationship to Category Model
+        public virtual ICollection<Category> Categories { get; set; } = new HashSet<Category>();
 
 
 

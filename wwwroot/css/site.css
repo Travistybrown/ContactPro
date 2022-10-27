@@ -1,3 +1,15 @@
+:root {
+    --tb-primaryColor: #0969b8;
+    --tb-primaryColorDark: #002a4e;
+    --tb-primaryColorLight: #edf5fc;
+    --tb-secondaryColor: #fff0d9;
+    --tb-dark-color: #131313;
+    --tb-light-gray: #d9d9d9;
+    --tb-light-color: #eeeeee;
+    --tb-button-color: rgb(5, 184, 255);
+}
+
+
 html {
   font-size: 14px;
 }
@@ -16,3 +28,92 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+/* Button Oberrides*/
+.btn-outline-primaryu {
+    color: var(--tb-dark-color);
+    border-color: Var(--tb-primaryColor) !important;
+
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:active,
+.btn-outline-primary:focus,{
+    border-color: var(--tb-secondaryColor) !important;
+    background-color: var(--tb-primaryColor);
+    color: var(--tb-light-color) !important;
+}
+
+.btn-primary{
+    color: white !important;
+    background-color: var(--tb-primaryColor) !important;
+    border-color: var(--tb-secondaryColor);
+}
+.btn-primary:hover{
+    filter: brightness(1.2) !important;
+    border-color: var(--tb-primaryColorDark);
+
+}
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus{
+    filter: brightness(1.2) !important;
+}
+
+.btnLink{
+    width: 7rem;
+}
+
+.ctaIcon {
+    color: var(--tb-highlight-color);
+    font-size: 2.5rem;
+}
+
+.footer-cta {
+    border-radius: 15px;
+    background: var(--tb-button-color);
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.footer-main {
+    background: var(--tb-primary-color);
+    color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+
+
+.socialIcons {
+    font-size: 2rem;
+    color: var(--tb-button-color);
+}
+
+    .socialIcons:hover {
+        color: var(--tb-highlight-color);
+    }
+
+
+
+    /*  BEGIN: Ladning Page*/
+    .icon{
+        font-size: 4rem;
+    }
+    .textHighlight{
+        color: var(--tb-primaryColor)
+    }
+
+    .heroTitle{
+        font-size: 3rem;
+        text-transform: uppercase;
+       
+    }
+
+    .subTitle{
+        font-size: 1.5rem;
+    }
+
+
+    /*END: LANDING PAGE*/
