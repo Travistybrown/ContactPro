@@ -114,6 +114,42 @@ body {
     .subTitle{
         font-size: 1.5rem;
     }
+.imgicon {
+    display: inline;
+    height: 3.5rem;
+    margin: 0rem .3rem;
+}
 
+figcaption {
+    color: var(--tb-dark-color);
+    font-size: 0.8rem;
+    text-align: center;
+}
 
-    /*END: LANDING PAGE*/
+    /*END: LANDING PAGE*
+        
+        
+    /* Sqaure Image css */
+
+.square-img-container {
+    position: relative;
+    background-color: var(--cf-primaryColorLight);
+    border-color: var(--cf-light-gray);
+    border-style: solid;
+}
+
+    .square-img-container::after {
+        content: "";
+        display: block;
+        padding-bottom: 100%;
+    }
+
+.square-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+    /* End Square image css*/
