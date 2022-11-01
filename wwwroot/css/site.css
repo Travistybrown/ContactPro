@@ -10,14 +10,16 @@
 }
 
 
-html {
-  font-size: 14px;
+html, body {
+    font-size: 14px;
+    height: 100%;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html, body {
+        font-size: 16px;
+        height: 100%;
+    }
 }
 
 html {
@@ -25,8 +27,21 @@ html {
   min-height: 100%;
 }
 
+.navbar{
+    background: var(--tb-primaryColor)!important;
+    
+}
+
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    background-color: var(--tb-light-color);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+    color: var(--tb-dark-color);
+    font-family: var(--tb-body-font);
+    font-weight: 400;
+    font-size: 1.2rem;
 }
 
 /* Button Oberrides*/
@@ -42,6 +57,12 @@ body {
     border-color: var(--tb-secondaryColor) !important;
     background-color: var(--tb-primaryColor);
     color: var(--tb-light-color) !important;
+}
+
+.content {
+    flex: 1 0 auto;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
 }
 
 .btn-primary{
@@ -68,6 +89,10 @@ body {
     color: var(--tb-highlight-color);
     font-size: 2.5rem;
 }
+footer {
+    flex-shrink: 0;
+    background-color: var(--tb-primaryColor);
+}
 
 .footer-cta {
     border-radius: 15px;
@@ -88,7 +113,7 @@ body {
 
 .socialIcons {
     font-size: 2rem;
-    color: var(--tb-button-color);
+    color: var(--tb-light-color);
 }
 
     .socialIcons:hover {
@@ -153,3 +178,32 @@ figcaption {
 }
 
     /* End Square image css*/
+
+    .editIcons{
+        font-size: 1.5rem;
+        opacity: .9;
+        color: var(--tb-primaryColorDark);
+
+    }
+
+    .editIcons:hover{
+        color: var(--tb-primaryColor);
+        font-weight: bold;
+        opacity: 1;
+        cursor: pointer;
+    }
+
+    .sideNav{
+        border-radius: 25px;
+        border-color: var(--tb-light-color);
+        border-style: solid;
+        border-width: 3px;
+        background-color: var(--tb-light-gray);
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        height: fit-content;
+
+
+    }
