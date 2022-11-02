@@ -42,6 +42,7 @@ body {
     font-family: var(--tb-body-font);
     font-weight: 400;
     font-size: 1.2rem;
+    
 }
 
 /* Button Oberrides*/
@@ -175,6 +176,11 @@ figcaption {
     height: 100%;
     object-fit: cover;
     object-position: top;
+}
+
+.main-img {
+ 
+   
 }
 
     /* End Square image css*/
